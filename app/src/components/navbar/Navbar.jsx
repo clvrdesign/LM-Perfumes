@@ -3,15 +3,15 @@ import 'boxicons'
 
 const Navbar = () => {
   return (
-    <nav className="bg-sky-50">
-      <div className="max-w-[1200px] m-auto py-4 px-5 flex justify-between items-center border-b border-b-sky-100">
-        <div className="flex gap-10">
-        <Link to='/'><h1 className='text-2xl font-semibold text-sky-500'>eShop</h1></Link>
+    <nav className="bg-sky-500">
+      <div className="max-w-[1200px] m-auto py-4 px-5 flex justify-between items-center border-b border-b-sky-100 border-opacity-35">
+        <div className="flex items-center gap-10">
+        <Link to='/'><h1 className='text-2xl font-semibold text-white'>eShop</h1></Link>
         <form action="">
-          <input type="search" placeholder="Search..." className="bg-white text-[15px] py-2 px-4 border focus:border-sky-200 outline-none rounded-full"/>
+          <input type="search" placeholder="Search..." className="bg-white text-[15px] py-2 px-4 outline-none rounded-full"/>
         </form>
         </div>
-        <div className="flex gap-10 text-sky-500">
+        <div className="flex gap-10 text-white font-medium">
           <Link className="relative flex gap-2" to='/favorites'>
             <i className="bi bi-heart"></i>
             Likes
