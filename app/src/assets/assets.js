@@ -1,3 +1,5 @@
 import pattern from './bg.png'
-const assets = { pattern }
+import logo from './logo.svg'
+
+const assets = { pattern, logo }
 export default assets
