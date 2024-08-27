@@ -6,9 +6,7 @@ const Home = () => {
     <>
     <Navbar/>
     <Header>
-      <form className="lg:w-1/2 w-full flex items-center justify-center" action="">
-        <input type="search" placeholder="Search products..." className="bg-white lg:w-1/2 text-gray-700 text-[15px] py-4 px-6 outline-none rounded-full" />
-      </form>
+      <h1 className='text-3xl text-white font-semibold'>Your Cart</h1>
     </Header>
     <div className="max-w-[1200px] m-auto px-3">
         
