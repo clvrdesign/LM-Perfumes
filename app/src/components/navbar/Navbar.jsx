@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link to='/'>
           <img className='h-[35px] lg:h-[45px]' src={assets.logo} alt="logo" />
         </Link>
-        <div className="flex gap-5 lg:gap-10 text-white font-medium">
+        <div className="flex gap-2 lg:gap-10 text-white font-medium">
           <Link className="relative flex items-center gap-1" to='/'>
             <i className="bi bi-house w-8 h-8 flex items-center justify-center lg:bg-transparent lg:text-white bg-white text-sky-500 rounded-full"></i>
             <span className='hidden lg:block'>Home</span>
