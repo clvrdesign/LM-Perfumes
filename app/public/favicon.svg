@@ -4,7 +4,7 @@
 	 viewBox="0 0 365 365" style="enable-background:new 0 0 365 365;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FEC944;}
-	.st1{fill:#353330;stroke:#353330;stroke-width:14;stroke-miterlimit:10;}
+	.st1{fill:#353330;}
 </style>
 <path class="st0" d="M275.52,365H89.48c-49.5,0-89.63-40.13-89.63-89.63V89.63C-0.15,40.13,39.98,0,89.48,0h186.04
 	c49.5,0,89.63,40.13,89.63,89.63v185.73C365.15,324.87,325.02,365,275.52,365z"/>
