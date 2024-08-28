@@ -1,12 +1,28 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import assets from '../../assets/assets'
 
 const Navbar = () => {
+
+  const [isMobile, setIsMobile] = useState(true)
+
+  useEffect(()=>{
+    if(window.innerWidth > 926){
+    setIsMobile(false)
+  }
+  }, [])
+  
+
   return (
     <nav className="bg-gray-800">
       <div className="max-w-[1200px] m-auto py-4 px-5 flex justify-between items-center">
         <Link to='/'>
-          <img className='h-[35px] lg:h-[45px]' src={assets.logo} alt="logo" />
+          {isMobile ? (
+            <img className='h-[35px] lg:h-[45px]' src={assets.logo} alt="logo" />
+          ) : (
+            <img className='h-[35px] lg:h-[45px]' src={assets.logo_lg} alt="logo" />
+          )}
+          
         </Link>
         <div className="flex gap-2 lg:gap-10 text-yellow-500 font-medium">
           <Link className="relative flex items-center gap-1" to='/'>
