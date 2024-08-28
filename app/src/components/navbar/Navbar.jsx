@@ -24,7 +24,7 @@ const Navbar = () => {
           )}
           
         </Link>
-        <div className="flex gap-2 lg:gap-10 text-yellow-500 font-medium">
+        <div className="flex gap-4 lg:gap-10 text-yellow-500 font-medium">
           <Link className="relative flex items-center gap-1" to='/'>
             <i className="bi bi-house w-8 h-8 flex items-center justify-center lg:bg-transparent lg:text-yellow-500 bg-yellow-500 text-gray-800 rounded-full"></i>
             <span className='hidden lg:block'>Home</span>
