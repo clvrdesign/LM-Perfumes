@@ -38,7 +38,7 @@ const Navbar = () => {
             <i className="bi bi-bag w-8 h-8 flex items-center justify-center lg:bg-transparent lg:text-yellow-500 bg-yellow-500 text-gray-800 rounded-full"></i>
             <span className='hidden lg:block'>Cart</span>
             <span className='absolute -top-2 -right-2 w-4 h-4 flex items-center justify-center bg-red-500 text-[12px] text-white rounded-full'>5</span>
-          </Link><Link className="relative flex items-center gap-1" to='/cart'>
+          </Link><Link className="relative flex items-center gap-1" to=''>
             <i className="bi bi-person text-lg w-8 h-8 flex items-center justify-center lg:bg-transparent lg:text-yellow-500 bg-yellow-500 text-gray-800 rounded-full"></i>
             <span className='hidden lg:block'>Login</span>
           </Link>
