@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar/Navbar'
 import Header from '../components/header/Header'
+import Footer from '../components/footer/Footer'
 
 const Home = () => {
   return (
@@ -10,9 +11,10 @@ const Home = () => {
         <input type="search" placeholder="Search perfumes..." className="bg-gray-700 lg:w-1/2 w-[275px] text-gray-200 text-[15px] py-4 px-6 outline-none rounded-full" />
       </form>
     </Header>
-    <div className="max-w-[1200px] m-auto px-3">
+    <div className="max-w-[1200px] m-auto min-h-[60vh] px-3">
         
     </div>
+    <Footer/>
     </>
   )
 }
