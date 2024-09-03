@@ -33,7 +33,7 @@ const Home = () => {
           />
         </form>
       </Header>
-      <div className="max-w-[1200px] m-auto min-h-[60vh] px-3">
+      <div className="max-w-[1200px] m-auto min-h-[60vh] px-3 text-gray-200">
         {loading ? (
           <p>Loading products...</p>
         ) : products.length > 0 ? (
