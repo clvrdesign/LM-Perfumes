@@ -1,10 +1,10 @@
 import Item from './Product'
-import { useState, useEffects } from 'react'
+import { useState, useEffect } from 'react'
 
 const Products = () => {
     const [products, setProducts] = useState([])
 
-    useEffects(() => {
+    useEffect(() => {
         setProducts(
             [
                 { id: 1, name: 'Product 1', price: 10 },
