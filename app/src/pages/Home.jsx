@@ -2,25 +2,9 @@ import Navbar from '../components/navbar/Navbar'
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
 import Products from '../components/items/Products'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
 
 const Home = () => {
-  const [products, setProducts] = useState([])
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    axios.get('http://localhost:3000/products')
-      .then(response => {
-        setProducts(response.data)
-        setLoading(false)
-      })
-      .catch(error => {
-        console.error("There was an error fetching the products!", error)
-        setLoading(false)
-      })
-  }, [])
-
+  
   return (
     <>
       <Navbar />
@@ -33,17 +17,7 @@ const Home = () => {
           />
         </form>
       </Header>
-      <div className="max-w-[1200px] m-auto min-h-[60vh] px-3 text-gray-200">
-        {loading ? (
-          <p>Loading products...</p>
-        ) : products.length > 0 ? (
-          products.map((product, index) => (
-            <Products key={index} product={product} />
-          ))
-        ) : (
-          <p>No products found</p>
-        )}
-      </div>
+      <Products/>
       <Footer />
     </>
   )
