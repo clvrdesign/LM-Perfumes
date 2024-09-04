@@ -23,7 +23,7 @@ const Products = () => {
             .then(
                 setProducts(prevProducts =>
                     prevProducts.map(product =>
-                        product.id === productId ? { ...product, favorite: true } : product
+                        product.id === productId ? { ...product, isFavorite: true } : product
                     )
                 )
             )
@@ -35,7 +35,9 @@ const Products = () => {
     return (
         <div className="max-w-[1200px] m-auto min-h-[60vh] px-3 py-10 text-gray-200">
             {loading ? (
-                <p>Loading products...</p>
+                <div className="w-full h-full bg-slate-950 flex justify-center items-center z-50">
+                    <div className="animate-spin w-50 h-50 border-r-4 border-slate-300 rounded-full">d</div>
+                </div>
             ) : products.length > 0 ? (
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">

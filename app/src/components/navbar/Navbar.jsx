@@ -14,7 +14,7 @@ const Navbar = () => {
   
 
   return (
-    <nav className="bg-slate-900 sticky top-0">
+    <nav className="bg-slate-900 sticky top-0 z-30">
       <div className="max-w-[1200px] m-auto py-4 px-5 flex justify-between items-center">
         <Link to='/'>
           {isMobile ? (
