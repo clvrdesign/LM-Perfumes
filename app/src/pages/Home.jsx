@@ -17,7 +17,9 @@ const Home = () => {
           />
         </form>
       </Header>
-      <Products/>
+      <div className="max-w-[1200px] m-auto min-h-[60vh] px-3 py-10 text-gray-200">
+          <Products />
+      </div>
       <Footer />
     </>
   )
